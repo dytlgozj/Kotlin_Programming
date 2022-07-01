@@ -14,12 +14,7 @@ class Lark(name: String, wing: Int, beak: String, color: String) : Bird(name, wi
 class Parrot : Bird {
     val language: String
 
-    constructor(name: String, wing: Int, beak: String, color: String, language: String) : super(
-        name,
-        wing,
-        beak,
-        color
-    ) {
+    constructor(name: String, wing: Int, beak: String, color: String, language: String) : super(name, wing, beak, color) {
         this.language = language
     }
 

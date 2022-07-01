@@ -7,7 +7,11 @@ open class Base {
 
 class Child : Base() {
     override val x: Int = super.x + 1
-    override fun f() = println("CHild Class f()")
+    override fun f() = println("Child Class f()")
+
+    init {
+        println("[Init]")
+    }
 
     inner class Inside {
         fun f() = println("Inside Class f()")
@@ -15,7 +19,7 @@ class Child : Base() {
             f()
             Child().f()
             super@Child.f()
-            println("[Inside] super@Child.x : ${Child().x}")
+            println("[Inside] super@Child.x : ${super@Child.x}")
         }
     }
 }
