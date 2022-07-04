@@ -5,7 +5,7 @@ fun main() {
 
     if (num is Int) {
         print(num)
-    } else if(num !is Int) {
+    } else if (num !is Int) {
         print("Not a Int")
     }
 }

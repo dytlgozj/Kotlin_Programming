@@ -15,6 +15,7 @@ class Smartphone(val model: String) {
         class Led(val color: String) {
             fun blink(): String = "Blinking ${color} on ${model}"
         }
+
         val powerStatus = Led("Red")
         val powerSwitch = object : Switcher {
             override fun on(): String {

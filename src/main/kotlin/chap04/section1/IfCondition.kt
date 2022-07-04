@@ -7,8 +7,7 @@ fun main() {
     val max = if (a > b) {
         println("a 선택")
         a
-    }
-    else {
+    } else {
         println("b 선택")
         b
     }

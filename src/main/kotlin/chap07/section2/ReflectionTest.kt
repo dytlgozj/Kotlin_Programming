@@ -6,7 +6,7 @@ import kotlin.reflect.full.memberProperties
 
 class User(val id: Int, val name: String, var grade: String = "Normal") {
     fun check() {
-        if(grade == "Normal") println("You need to get the Silver grade")
+        if (grade == "Normal") println("You need to get the Silver grade")
     }
 }
 

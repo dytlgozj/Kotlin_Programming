@@ -5,6 +5,7 @@ internal class InternalClass {
     internal fun isFunc() {
         i += 1
     }
+
     fun access() {
         isFunc()
     }

@@ -21,7 +21,8 @@ class Car(name: String, color: String, weight: Double, override var maxSpeed: Do
     }
 }
 
-class Motorcycle(name: String, color: String, weight: Double, override var maxSpeed: Double) : Vehicle(name, color, weight) {
+class Motorcycle(name: String, color: String, weight: Double, override var maxSpeed: Double) :
+    Vehicle(name, color, weight) {
     override fun start() {
         println("Bike Started")
     }

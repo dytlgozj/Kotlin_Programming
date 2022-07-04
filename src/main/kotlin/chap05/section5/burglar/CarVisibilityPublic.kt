@@ -17,7 +17,8 @@ open class Car protected constructor(_year: Int, _model: String, _power: String,
     }
 }
 
-class Tico(_year: Int, _model: String, _power: String, _wheel: String, var name: String, private var key: Boolean) : Car(_year, _model, _power, _wheel) {
+class Tico(_year: Int, _model: String, _power: String, _wheel: String, var name: String, private var key: Boolean) :
+    Car(_year, _model, _power, _wheel) {
     override var power: String = "50hp"
     val driver = Driver(name, "first class")
 

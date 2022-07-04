@@ -3,6 +3,7 @@ package chap05.section6.aggregation
 class Pond(_name: String, _members: MutableList<Duck>) {
     val name: String = _name
     val members: MutableList<Duck> = _members
+
     constructor(_name: String) : this(_name, mutableListOf<Duck>())
 }
 

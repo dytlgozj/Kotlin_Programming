@@ -15,7 +15,7 @@ class FakeAge {
         set(value) {
             field = when {
                 value < 18 -> 18
-                value in 18 .. 30 -> value
+                value in 18..30 -> value
                 else -> value - 3
             }
         }

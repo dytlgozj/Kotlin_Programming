@@ -22,7 +22,7 @@ fun main() {
     println(MemberType.valueOf("SILVER"))
     println(MemberType.SILVER.prio)
 
-    for(grade in MemberType.values()) {
+    for (grade in MemberType.values()) {
         println("grade.name = ${grade.name}, prio = ${grade.prio}")
     }
 }

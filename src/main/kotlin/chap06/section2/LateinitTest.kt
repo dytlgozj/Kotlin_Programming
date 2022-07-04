@@ -4,7 +4,7 @@ class Person {
     lateinit var name: String
 
     fun test() {
-        if(!::name.isInitialized) {
+        if (!::name.isInitialized) {
             println("not initialized")
         } else {
             println("initialized")

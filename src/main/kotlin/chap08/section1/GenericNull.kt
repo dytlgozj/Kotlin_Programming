@@ -1,6 +1,6 @@
 package chap08.section1
 
-class GenericNull<T: Any> {
+class GenericNull<T> {
     fun equalityFunc(arg1: T, arg2: T) {
         println(arg1?.equals(arg2))
     }

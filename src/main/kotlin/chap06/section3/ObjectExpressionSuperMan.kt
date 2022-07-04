@@ -8,7 +8,7 @@ open class Superman {
 
 fun main() {
     val pretendedMan = object : Superman() {
-//        override fun fly() = println("I'm not a real superman. I can't fly!")
+        //        override fun fly() = println("I'm not a real superman. I can't fly!")
         override fun fly() {
             println("I'm not a real superman. I can't fly!")
         }

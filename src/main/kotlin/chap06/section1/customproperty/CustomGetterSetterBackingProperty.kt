@@ -6,7 +6,7 @@ class User(_id: Int, _name: String, _age: Int) {
     private var tempName: String? = null
     var name: String = _name
         get() {
-            if(tempName == null) tempName = "NONAME"
+            if (tempName == null) tempName = "NONAME"
             return tempName ?: throw AssertionError("Asserted by others")
         }
 }

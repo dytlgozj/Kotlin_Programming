@@ -8,7 +8,7 @@ sealed class Result {
 class Status : Result()
 class Inside : Result.Success("Status")
 
-fun eval(result: Result): String = when(result) {
+fun eval(result: Result): String = when (result) {
     is Status -> "in progress"
     is Result.Success -> result.message
     is Result.Error -> result.message
