@@ -14,5 +14,5 @@ fun main() {
 //    println("single : " + listPair.single { it.second == 100 })
 
     println("binarySearch : " + list.binarySearch(3))
-    println("find : " + list.find { it > 3 })
+    println("find : " + list.find { it > 4 })
 }
