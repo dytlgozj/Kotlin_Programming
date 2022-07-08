@@ -2,7 +2,7 @@ package chap09.section3
 
 fun main() {
     val mixedTypesSet = setOf("Hello", 5, "world", 3.14, 'c')
-    val intSet:  Set<Int> = setOf(1, 5, 5)
+    val intSet: Set<Int> = setOf(1, 5, 5)
 
     println(mixedTypesSet)
     println(intSet)

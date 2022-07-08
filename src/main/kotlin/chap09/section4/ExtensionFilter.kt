@@ -23,6 +23,6 @@ fun main() {
 //    println(list.takeWhile { it < 3 })
 
     println("distinct : " + listRepeated.distinct())
-    println("intersect : " + list.intersect(listOf(5, 6, 7 ,8)))
+    println("intersect : " + list.intersect(listOf(5, 6, 7, 8)))
 
 }
