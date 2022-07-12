@@ -12,6 +12,6 @@ fun main() {
         doSomething()
         println("World!")
     }
-    println("Hello,")
+    println("Hello, ")
     Thread.sleep(2000L)
 }
