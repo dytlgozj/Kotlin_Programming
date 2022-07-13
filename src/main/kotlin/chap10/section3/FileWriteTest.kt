@@ -6,7 +6,8 @@ import java.nio.file.Paths
 import java.nio.file.StandardOpenOption
 
 fun main() {
-    val path = "C:\\Users\\Administrator\\Documents\\Analysis\\Project\\Kotlin_Project\\KotlinProgramming\\src\\main\\kotlin\\chap10\\section1\\output.txt"
+    val path =
+        "C:\\Users\\Administrator\\Documents\\Analysis\\Project\\Kotlin_Project\\KotlinProgramming\\src\\main\\kotlin\\chap10\\section1\\output.txt"
     val text = "안녕하세요! Hello World!\n"
 
     try {
