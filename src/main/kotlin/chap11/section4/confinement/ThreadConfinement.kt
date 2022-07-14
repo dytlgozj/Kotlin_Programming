@@ -1,22 +1,19 @@
-package chap11.section4
+package chap11.section4.confinement
 
 import kotlinx.coroutines.*
-import kotlinx.coroutines.sync.Mutex
-import kotlinx.coroutines.sync.withLock
-import java.util.concurrent.atomic.AtomicInteger
+import kotlin.coroutines.CoroutineContext
 import kotlin.system.measureTimeMillis
 
 var counter = 0
-val mutex = Mutex()
-//var counter = AtomicInteger(0)
+val counterContext = newSingleThreadContext("CounterContext")
 
-suspend fun massiveRun(action: suspend () -> Unit) {
+suspend fun massiveRun(context: CoroutineContext, action: suspend () -> Unit) {
     val n = 1000
     val k = 1000
 
     val time = measureTimeMillis {
         val jobs = List(n) {
-            GlobalScope.launch {
+            GlobalScope.launch(context) {
                 repeat(k) {
                     action()
                 }
@@ -28,10 +25,8 @@ suspend fun massiveRun(action: suspend () -> Unit) {
 }
 
 fun main() = runBlocking {
-    massiveRun {
-        mutex.withLock {
-            counter++
-        }
+    massiveRun(counterContext) {
+        counter++
     }
 
     println("Counter = ${counter}")
